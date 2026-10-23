@@ -1,0 +1,111 @@
+{
+  "verified_on": "2026-10-23",
+  "local_checks": [
+    {
+      "command": "cargo fmt --all -- --check",
+      "exit_code": 0
+    },
+    {
+      "command": "cargo test --locked",
+      "exit_code": 0,
+      "passed_tests": 16
+    },
+    {
+      "command": "cargo test --locked --no-default-features",
+      "exit_code": 0,
+      "passed_tests": 15
+    },
+    {
+      "command": "cargo clippy --locked --all-targets -- -D warnings",
+      "exit_code": 0
+    },
+    {
+      "command": "cargo doc --locked --no-deps",
+      "exit_code": 0
+    },
+    {
+      "command": "cargo build --release --locked",
+      "exit_code": 0
+    }
+  ],
+  "same_seed_reproduction": {
+    "main": {
+      "max_abs_parameter_difference": 0.0,
+      "passed": true
+    },
+    "tiny": {
+      "max_abs_parameter_difference": 0.0,
+      "passed": true
+    }
+  },
+  "desktop": {
+    "native_captures": {
+      "gui_native.png": {
+        "pixels": [
+          1920,
+          1200
+        ],
+        "blue_or_orange_pixels": 24593,
+        "sha256": "6212e911a675efbb096e50346a431420f5cd5b7f4be661929f1edf703115b8ae"
+      },
+      "gui_compact.png": {
+        "pixels": [
+          1536,
+          1152
+        ],
+        "blue_or_orange_pixels": 20463,
+        "sha256": "dede79068bf80462be3273fbf7760db3eea80a3f5c70049c27b3900278a71e8f"
+      },
+      "gui_ood.png": {
+        "pixels": [
+          1920,
+          1200
+        ],
+        "blue_or_orange_pixels": 30226,
+        "sha256": "519974cead3c83277e038bd8500a6e1d2bbaf74f07b6e854aa30529a60f7c22c"
+      },
+      "gui_tiny.png": {
+        "pixels": [
+          1920,
+          1200
+        ],
+        "blue_or_orange_pixels": 35737,
+        "sha256": "86d875a23c83a9fa388e439c6378d3028515ec4990189c5a6660d9eb6a3ed3c7"
+      }
+    },
+    "changed_pixels_between_t0_and_t4": 11565,
+    "isolated_working_directory": true,
+    "minimum_window_logical_pixels": [
+      960,
+      640
+    ],
+    "no_external_model_files": true,
+    "system_only_path_smoke_test": true,
+    "visible_missing_model_error_checked": true,
+    "dependency_audit": "Windows system DLLs and OpenGL32 only; no VC runtime DLL required"
+  },
+  "report": {
+    "pages": 12,
+    "renderer": "Microsoft Word native PDF export; all pages visually inspected"
+  },
+  "presentation": {
+    "slides": 12,
+    "editable_charts": 4,
+    "editable_tables": 6,
+    "renderers": [
+      "Artifact Tool",
+      "Microsoft PowerPoint native export"
+    ],
+    "all_slides_visually_inspected": true
+  },
+  "privacy_scan": {
+    "candidate_files_scanned": 46,
+    "private_path_or_credential_patterns_found": 0
+  },
+  "software_ci": {
+    "verified_commit": "050c7ed7fc1cd996593611bc60e5292c2610bdbb",
+    "conclusion": "success",
+    "url": "https://github.com/xiaobo121388/project11-neural-ode/actions/runs/39899740380"
+  },
+  "one_step_acceptance_passed": true
+}
