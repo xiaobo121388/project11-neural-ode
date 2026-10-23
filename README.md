@@ -123,15 +123,12 @@ Packaging copies only the executables, notices and demo instructions.
 - [Seven-minute English script and Chinese reference](docs/SPEAKER_NOTES_bilingual.md)
 - [Three-minute demo and bilingual Q&A](docs/DEMO_AND_QA_zh.md)
 - [Chinese setup and reading guide](docs/README_zh.md)
-- [Real team details and responsibilities](docs/TEAM_RECORD.md)
+- [Team roster and responsibilities](docs/TEAM_RECORD.md)
 
 Slides 1 to 10 form the talk; slides 11 and 12 are Q&A appendices. Use the
-3-minute demonstration after the approximately 7-minute talk. Names, student
-IDs, the deadline and individual contributions are intentionally unfilled.
-Complete them from actual team records before course submission.
+3-minute demonstration after the approximately 7-minute talk.
 
 ## Licenses
 
 Project code uses MIT. Vendored Lucide interface icons retain their ISC license
-in assets/LICENSE.lucide. The original course attachment and private classroom
-screenshots are not included in this public repository.
+in assets/LICENSE.lucide.

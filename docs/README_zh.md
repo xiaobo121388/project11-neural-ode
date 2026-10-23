@@ -14,7 +14,7 @@
 2. 打开 Project11_Presentation.pptx，主体 10 页，另外 2 页是提问附录。
 3. 对照 SPEAKER_NOTES_bilingual.md 排练英文讲解，目标总计约 7 分钟。
 4. 按 DEMO_AND_QA_zh.md 排练 3 分钟演示和常见问题。
-5. 填写 TEAM_RECORD.md 和报告封面的实名信息、学号、截止日期与真实分工。
+5. 查看 TEAM_RECORD.md 中的组员名单，分工和截止日期可在确定后补充。
 
 ## 从源码运行
 
@@ -61,8 +61,6 @@ data 和 benchmark_fixture 被 Git 忽略，可以由命令重建；完整本地
 
 ## Git 与验收
 
-公开仓库为 xiaobo121388/project11-neural-ode。开发按功能分步提交，保留远程初始化历史，没有伪造成员作者或工作记录。
+公开仓库为 xiaobo121388/project11-neural-ode。开发按功能分步提交，保留远程初始化历史。
 Windows CI 执行格式检查、单元/集成测试、无 GUI 核心测试、Clippy、Rustdoc、Release 构建和独立 NumPy 校验。
 当前 GUI 套件为 13 项单元测试加 3 项集成测试。
-
-最终互评分数按课程安排在实际评价时填写，本项目不提供虚构的评分或个人贡献。

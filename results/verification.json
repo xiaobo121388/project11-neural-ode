@@ -91,15 +91,26 @@
   "presentation": {
     "slides": 12,
     "editable_charts": 4,
-    "editable_tables": 6,
+    "editable_tables": 7,
     "renderers": [
       "Artifact Tool",
       "Microsoft PowerPoint native export"
     ],
     "all_slides_visually_inspected": true
   },
+  "team_roster": {
+    "members": 6,
+    "group_number": 11,
+    "responsibilities_blank": true,
+    "consistent_in": [
+      "docs/team_members.json",
+      "docs/TEAM_RECORD.md",
+      "report cover",
+      "presentation cover"
+    ]
+  },
   "privacy_scan": {
-    "candidate_files_scanned": 46,
+    "candidate_files_scanned": 48,
     "private_path_or_credential_patterns_found": 0
   },
   "software_ci": {
