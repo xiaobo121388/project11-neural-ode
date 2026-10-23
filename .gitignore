@@ -1,0 +1,9 @@
+/target/
+/data/
+/benchmark_fixture/
+/dist/
+*.log
+__pycache__/
+.venv/
+.DS_Store
+Thumbs.db
