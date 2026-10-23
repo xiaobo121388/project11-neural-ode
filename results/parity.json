@@ -1,0 +1,8 @@
+{
+  "forward_max_abs_error": 2.220446049250313e-16,
+  "loss_abs_error": 4.440892098500626e-16,
+  "gradient_max_abs_error": 2.220446049250313e-16,
+  "update_max_abs_error": 5.551115123125783e-17,
+  "tolerance": 1e-10,
+  "passed": true
+}

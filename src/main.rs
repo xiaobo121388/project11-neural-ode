@@ -38,6 +38,13 @@ enum Command {
         #[arg(long, default_value = ".")]
         out: PathBuf,
     },
+    /// Export the shared fixture, check Rust parity outputs and time five runs.
+    Benchmark {
+        #[arg(long, default_value = ".")]
+        out: PathBuf,
+        #[arg(long, default_value_t = 50)]
+        epochs: usize,
+    },
     /// Generate, train and evaluate the entire deterministic experiment.
     Reproduce {
         #[arg(long, default_value = ".")]
@@ -93,6 +100,7 @@ fn run() -> Result<()> {
             learning_rate,
         } => train(&out, epochs, learning_rate)?,
         Command::Evaluate { out } => evaluate(&out)?,
+        Command::Benchmark { out, epochs } => project11::benchmark::benchmark(&out, epochs)?,
         Command::Reproduce { out, epochs } => {
             Dataset::generate(DataConfig::default())?.save(&out.join("data"))?;
             train(&out, epochs, 0.01)?;

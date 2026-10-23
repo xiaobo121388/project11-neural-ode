@@ -3,6 +3,7 @@
 //! Reference trajectories use a fourth-order Runge-Kutta integrator. The learned
 //! model predicts state increments without invoking the physical equation.
 
+pub mod benchmark;
 pub mod data;
 pub mod evaluation;
 pub mod model;

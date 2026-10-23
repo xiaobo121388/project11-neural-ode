@@ -1,0 +1,55 @@
+{
+  "implementation": "Python NumPy",
+  "epochs": 50,
+  "samples": 28000,
+  "batch_size": 128,
+  "learning_rate": 0.01,
+  "dtype": "float64",
+  "warmups": 1,
+  "repetitions": 5,
+  "threads": 1,
+  "backend": {
+    "name": "scipy-openblas",
+    "version": "0.3.34.106.0"
+  },
+  "median_seconds": 2.469241200014949,
+  "trials": [
+    {
+      "trial": 1,
+      "seconds": 2.6093408000888303,
+      "final_loss": 0.0008122138387203973
+    },
+    {
+      "trial": 2,
+      "seconds": 2.681294000009075,
+      "final_loss": 0.0008122138387203973
+    },
+    {
+      "trial": 3,
+      "seconds": 2.2120887999190018,
+      "final_loss": 0.0008122138387203973
+    },
+    {
+      "trial": 4,
+      "seconds": 2.469241200014949,
+      "final_loss": 0.0008122138387203973
+    },
+    {
+      "trial": 5,
+      "seconds": 2.16456449998077,
+      "final_loss": 0.0008122138387203973
+    }
+  ],
+  "environment": {
+    "python": "3.12.10",
+    "numpy": "2.5.3",
+    "os": "Windows 11",
+    "architecture": "AMD64",
+    "cpu": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  }
+}
