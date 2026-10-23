@@ -1,0 +1,950 @@
+{
+  "schema_version": 1,
+  "test_samples": 6000,
+  "one_step": [
+    {
+      "method": "Persistence",
+      "theta_rmse": 0.029476380111720026,
+      "omega_rmse": 0.08717090755718275,
+      "standardized_rmse": 0.922868448219171
+    },
+    {
+      "method": "Euler",
+      "theta_rmse": 0.0008720061330458715,
+      "omega_rmse": 0.0026164007358273275,
+      "standardized_rmse": 0.02749990535452831
+    },
+    {
+      "method": "RK4",
+      "theta_rmse": 3.3439466550489826e-9,
+      "omega_rmse": 8.211049925745825e-9,
+      "standardized_rmse": 9.628035170046799e-8
+    },
+    {
+      "method": "NN",
+      "theta_rmse": 0.00027437289528251663,
+      "omega_rmse": 0.00076479342303113,
+      "standardized_rmse": 0.008348773603608212
+    },
+    {
+      "method": "Tiny NN",
+      "theta_rmse": 0.0023164872973194207,
+      "omega_rmse": 0.0034888717058267037,
+      "standardized_rmse": 0.057661217567561845
+    }
+  ],
+  "standardized_improvement_fraction": 0.9909534521201602,
+  "acceptance_passed": true,
+  "rollouts": [
+    {
+      "trajectory": 68,
+      "scope": "held_out",
+      "method": "Persistence",
+      "initial": [
+        0.2924222948406301,
+        1.204495480883006
+      ],
+      "theta_rmse": 0.4012869063282005,
+      "omega_rmse": 1.4902207878192657,
+      "final_theta_error": 0.22202247875481676,
+      "final_omega_error": 0.30874066339028616,
+      "max_abs_theta_error": 0.7518995786998901
+    },
+    {
+      "trajectory": 68,
+      "scope": "held_out",
+      "method": "Euler",
+      "initial": [
+        0.2924222948406301,
+        1.204495480883006
+      ],
+      "theta_rmse": 0.2087641978457448,
+      "omega_rmse": 0.5972940466073509,
+      "final_theta_error": -0.24854350259226693,
+      "final_omega_error": 1.3809300293896012,
+      "max_abs_theta_error": 0.49682130919638257
+    },
+    {
+      "trajectory": 68,
+      "scope": "held_out",
+      "method": "RK4",
+      "initial": [
+        0.2924222948406301,
+        1.204495480883006
+      ],
+      "theta_rmse": 5.239793529518409e-7,
+      "omega_rmse": 1.5928939706119315e-6,
+      "final_theta_error": -1.0813319207686467e-6,
+      "final_omega_error": 9.916572003554336e-7,
+      "max_abs_theta_error": 1.1167019584572974e-6
+    },
+    {
+      "trajectory": 68,
+      "scope": "held_out",
+      "method": "NN",
+      "initial": [
+        0.2924222948406301,
+        1.204495480883006
+      ],
+      "theta_rmse": 0.022924520639943213,
+      "omega_rmse": 0.07236856893867559,
+      "final_theta_error": 0.04601182570915048,
+      "final_omega_error": -0.06059031616917221,
+      "max_abs_theta_error": 0.04961369029913509
+    },
+    {
+      "trajectory": 68,
+      "scope": "held_out",
+      "method": "Tiny NN",
+      "initial": [
+        0.2924222948406301,
+        1.204495480883006
+      ],
+      "theta_rmse": 0.285005800140637,
+      "omega_rmse": 0.8720559378193691,
+      "final_theta_error": 0.10444343621238053,
+      "final_omega_error": -1.75367241843333,
+      "max_abs_theta_error": 0.5685263973024285
+    },
+    {
+      "trajectory": 69,
+      "scope": "held_out",
+      "method": "Persistence",
+      "initial": [
+        0.29829520187408654,
+        1.699332986759889
+      ],
+      "theta_rmse": 0.46325999741174556,
+      "omega_rmse": 2.0425673530127213,
+      "final_theta_error": 0.3382979420417612,
+      "final_omega_error": 0.5160060336418806,
+      "max_abs_theta_error": 0.8886930283992954
+    },
+    {
+      "trajectory": 69,
+      "scope": "held_out",
+      "method": "Euler",
+      "initial": [
+        0.29829520187408654,
+        1.699332986759889
+      ],
+      "theta_rmse": 0.2858323352746731,
+      "omega_rmse": 0.7988476143515845,
+      "final_theta_error": -0.6906099125587827,
+      "final_omega_error": 0.6939750915685075,
+      "max_abs_theta_error": 0.7218085850190875
+    },
+    {
+      "trajectory": 69,
+      "scope": "held_out",
+      "method": "RK4",
+      "initial": [
+        0.29829520187408654,
+        1.699332986759889
+      ],
+      "theta_rmse": 6.344358694319589e-7,
+      "omega_rmse": 1.9666404143364015e-6,
+      "final_theta_error": -1.3817853336400843e-6,
+      "final_omega_error": -2.551237239245552e-7,
+      "max_abs_theta_error": 1.3817853336400843e-6
+    },
+    {
+      "trajectory": 69,
+      "scope": "held_out",
+      "method": "NN",
+      "initial": [
+        0.29829520187408654,
+        1.699332986759889
+      ],
+      "theta_rmse": 0.02415668447358123,
+      "omega_rmse": 0.07714260773593795,
+      "final_theta_error": 0.05552275887787819,
+      "final_omega_error": -0.008460979595584117,
+      "max_abs_theta_error": 0.0555478516363164
+    },
+    {
+      "trajectory": 69,
+      "scope": "held_out",
+      "method": "Tiny NN",
+      "initial": [
+        0.29829520187408654,
+        1.699332986759889
+      ],
+      "theta_rmse": 0.28680607496483246,
+      "omega_rmse": 0.8495781470416573,
+      "final_theta_error": 0.44749947789601585,
+      "final_omega_error": -1.383011871938836,
+      "max_abs_theta_error": 0.6147611687765673
+    },
+    {
+      "trajectory": 70,
+      "scope": "held_out",
+      "method": "Persistence",
+      "initial": [
+        0.3142680813862859,
+        1.0259473318456749
+      ],
+      "theta_rmse": 0.40660239618369726,
+      "omega_rmse": 1.314730002137806,
+      "final_theta_error": 0.20885095601905032,
+      "final_omega_error": 0.22688298825572717,
+      "max_abs_theta_error": 0.7462167789140886
+    },
+    {
+      "trajectory": 70,
+      "scope": "held_out",
+      "method": "Euler",
+      "initial": [
+        0.3142680813862859,
+        1.0259473318456749
+      ],
+      "theta_rmse": 0.19248398658689053,
+      "omega_rmse": 0.5646023026670404,
+      "final_theta_error": -0.12838089100313566,
+      "final_omega_error": 1.4083868277281137,
+      "max_abs_theta_error": 0.4561698372139689
+    },
+    {
+      "trajectory": 70,
+      "scope": "held_out",
+      "method": "RK4",
+      "initial": [
+        0.3142680813862859,
+        1.0259473318456749
+      ],
+      "theta_rmse": 4.982431181706934e-7,
+      "omega_rmse": 1.5042618865583334e-6,
+      "final_theta_error": -9.693967981533325e-7,
+      "final_omega_error": 1.3985104850844365e-6,
+      "max_abs_theta_error": 1.053071307910089e-6
+    },
+    {
+      "trajectory": 70,
+      "scope": "held_out",
+      "method": "NN",
+      "initial": [
+        0.3142680813862859,
+        1.0259473318456749
+      ],
+      "theta_rmse": 0.02203767441568306,
+      "omega_rmse": 0.0693556986258487,
+      "final_theta_error": 0.040764791067672584,
+      "final_omega_error": -0.07798671733576512,
+      "max_abs_theta_error": 0.04723979094057855
+    },
+    {
+      "trajectory": 70,
+      "scope": "held_out",
+      "method": "Tiny NN",
+      "initial": [
+        0.3142680813862859,
+        1.0259473318456749
+      ],
+      "theta_rmse": 0.27674508505778905,
+      "omega_rmse": 0.8580599574178006,
+      "final_theta_error": -0.012486808646796563,
+      "final_omega_error": -1.703014111914546,
+      "max_abs_theta_error": 0.5467245025535324
+    },
+    {
+      "trajectory": 71,
+      "scope": "held_out",
+      "method": "Persistence",
+      "initial": [
+        1.0779574765379043,
+        0.4071053195632759
+      ],
+      "theta_rmse": 1.2529650495814373,
+      "omega_rmse": 1.8757859873144498,
+      "final_theta_error": 1.1556770349537862,
+      "final_omega_error": -1.5756239001790546,
+      "max_abs_theta_error": 2.1047006288288017
+    },
+    {
+      "trajectory": 71,
+      "scope": "held_out",
+      "method": "Euler",
+      "initial": [
+        1.0779574765379043,
+        0.4071053195632759
+      ],
+      "theta_rmse": 0.6477017233284351,
+      "omega_rmse": 1.906993479861142,
+      "final_theta_error": -1.3186529051811666,
+      "final_omega_error": -3.370334199830612,
+      "max_abs_theta_error": 1.6269856281675086
+    },
+    {
+      "trajectory": 71,
+      "scope": "held_out",
+      "method": "RK4",
+      "initial": [
+        1.0779574765379043,
+        0.4071053195632759
+      ],
+      "theta_rmse": 8.759806253472151e-7,
+      "omega_rmse": 2.656392788536705e-6,
+      "final_theta_error": -1.968318266584723e-6,
+      "final_omega_error": -4.494017626921476e-7,
+      "max_abs_theta_error": 1.968318266584723e-6
+    },
+    {
+      "trajectory": 71,
+      "scope": "held_out",
+      "method": "NN",
+      "initial": [
+        1.0779574765379043,
+        0.4071053195632759
+      ],
+      "theta_rmse": 0.00769755309755038,
+      "omega_rmse": 0.02540953113177711,
+      "final_theta_error": 0.012254089955201067,
+      "final_omega_error": -0.015262513526790977,
+      "max_abs_theta_error": 0.01565557430998315
+    },
+    {
+      "trajectory": 71,
+      "scope": "held_out",
+      "method": "Tiny NN",
+      "initial": [
+        1.0779574765379043,
+        0.4071053195632759
+      ],
+      "theta_rmse": 0.1002829977594565,
+      "omega_rmse": 0.3015149315271478,
+      "final_theta_error": 0.068370845092489,
+      "final_omega_error": -0.028388618582097402,
+      "max_abs_theta_error": 0.20826026625937755
+    },
+    {
+      "trajectory": 72,
+      "scope": "held_out",
+      "method": "Persistence",
+      "initial": [
+        -0.3501886191771879,
+        -0.27543935122188135
+      ],
+      "theta_rmse": 0.4058017079024961,
+      "omega_rmse": 0.6970044313325588,
+      "final_theta_error": -0.16027161572898527,
+      "final_omega_error": 0.058687632313374316,
+      "max_abs_theta_error": 0.6933650571886225
+    },
+    {
+      "trajectory": 72,
+      "scope": "held_out",
+      "method": "Euler",
+      "initial": [
+        -0.3501886191771879,
+        -0.27543935122188135
+      ],
+      "theta_rmse": 0.14389788571199852,
+      "omega_rmse": 0.46063098214132425,
+      "final_theta_error": -0.21399487306887763,
+      "final_omega_error": -0.8993821034182963,
+      "max_abs_theta_error": 0.33889922647883647
+    },
+    {
+      "trajectory": 72,
+      "scope": "held_out",
+      "method": "RK4",
+      "initial": [
+        -0.3501886191771879,
+        -0.27543935122188135
+      ],
+      "theta_rmse": 4.0262981602424856e-7,
+      "omega_rmse": 1.220025707588852e-6,
+      "final_theta_error": 4.0638502679657407e-7,
+      "final_omega_error": -2.360782987209653e-6,
+      "max_abs_theta_error": 8.382833872567705e-7
+    },
+    {
+      "trajectory": 72,
+      "scope": "held_out",
+      "method": "NN",
+      "initial": [
+        -0.3501886191771879,
+        -0.27543935122188135
+      ],
+      "theta_rmse": 0.017887563221103357,
+      "omega_rmse": 0.0573753687190427,
+      "final_theta_error": -0.014109821581352433,
+      "final_omega_error": 0.11668761697419155,
+      "max_abs_theta_error": 0.03801333352371983
+    },
+    {
+      "trajectory": 72,
+      "scope": "held_out",
+      "method": "Tiny NN",
+      "initial": [
+        -0.3501886191771879,
+        -0.27543935122188135
+      ],
+      "theta_rmse": 0.23907781262723526,
+      "omega_rmse": 0.7582803452200563,
+      "final_theta_error": 0.34310183867400235,
+      "final_omega_error": 0.8629630974579272,
+      "max_abs_theta_error": 0.4560361511266653
+    },
+    {
+      "trajectory": 73,
+      "scope": "held_out",
+      "method": "Persistence",
+      "initial": [
+        1.060508029200263,
+        -1.050732199539878
+      ],
+      "theta_rmse": 1.2553732226927237,
+      "omega_rmse": 2.1075472749187734,
+      "final_theta_error": 0.8659517638856054,
+      "final_omega_error": -2.9870374779630127,
+      "max_abs_theta_error": 2.121595179822008
+    },
+    {
+      "trajectory": 73,
+      "scope": "held_out",
+      "method": "Euler",
+      "initial": [
+        1.060508029200263,
+        -1.050732199539878
+      ],
+      "theta_rmse": 0.6873135705756424,
+      "omega_rmse": 1.9732985321677305,
+      "final_theta_error": -1.7236539257187822,
+      "final_omega_error": -2.104341073572477,
+      "max_abs_theta_error": 1.7236539257187822
+    },
+    {
+      "trajectory": 73,
+      "scope": "held_out",
+      "method": "RK4",
+      "initial": [
+        1.060508029200263,
+        -1.050732199539878
+      ],
+      "theta_rmse": 8.998143999256029e-7,
+      "omega_rmse": 2.6379963320918233e-6,
+      "final_theta_error": -1.896250179628245e-6,
+      "final_omega_error": 2.167270894748441e-6,
+      "max_abs_theta_error": 1.99179679484518e-6
+    },
+    {
+      "trajectory": 73,
+      "scope": "held_out",
+      "method": "NN",
+      "initial": [
+        1.060508029200263,
+        -1.050732199539878
+      ],
+      "theta_rmse": 0.010987892400784112,
+      "omega_rmse": 0.03443264492785164,
+      "final_theta_error": 0.0005605167388653964,
+      "final_omega_error": -0.017004422118532814,
+      "max_abs_theta_error": 0.021766145746114483
+    },
+    {
+      "trajectory": 73,
+      "scope": "held_out",
+      "method": "Tiny NN",
+      "initial": [
+        1.060508029200263,
+        -1.050732199539878
+      ],
+      "theta_rmse": 0.1424389647227567,
+      "omega_rmse": 0.4280255437400416,
+      "final_theta_error": -0.01943683860820647,
+      "final_omega_error": -0.021823838863036737,
+      "max_abs_theta_error": 0.2750560894328182
+    },
+    {
+      "trajectory": 74,
+      "scope": "held_out",
+      "method": "Persistence",
+      "initial": [
+        1.4007262261434965,
+        -1.4430079496551134
+      ],
+      "theta_rmse": 1.6609068194836678,
+      "omega_rmse": 2.6732100488887274,
+      "final_theta_error": 2.0253177976775705,
+      "final_omega_error": -3.28762793096002,
+      "max_abs_theta_error": 2.8132322543465835
+    },
+    {
+      "trajectory": 74,
+      "scope": "held_out",
+      "method": "Euler",
+      "initial": [
+        1.4007262261434965,
+        -1.4430079496551134
+      ],
+      "theta_rmse": 1.1673807084167864,
+      "omega_rmse": 2.899308702615335,
+      "final_theta_error": 1.6693996880036326,
+      "final_omega_error": -5.7963056020844,
+      "max_abs_theta_error": 2.6873698770330305
+    },
+    {
+      "trajectory": 74,
+      "scope": "held_out",
+      "method": "RK4",
+      "initial": [
+        1.4007262261434965,
+        -1.4430079496551134
+      ],
+      "theta_rmse": 9.336224775032938e-7,
+      "omega_rmse": 2.864319051808303e-6,
+      "final_theta_error": -1.5745632205854676e-6,
+      "final_omega_error": -4.593504570049589e-6,
+      "max_abs_theta_error": 2.094145477533893e-6
+    },
+    {
+      "trajectory": 74,
+      "scope": "held_out",
+      "method": "NN",
+      "initial": [
+        1.4007262261434965,
+        -1.4430079496551134
+      ],
+      "theta_rmse": 0.08135522102769456,
+      "omega_rmse": 0.24965751073727915,
+      "final_theta_error": -0.11325943658522719,
+      "final_omega_error": -0.3416040857810687,
+      "max_abs_theta_error": 0.15943934114368155
+    },
+    {
+      "trajectory": 74,
+      "scope": "held_out",
+      "method": "Tiny NN",
+      "initial": [
+        1.4007262261434965,
+        -1.4430079496551134
+      ],
+      "theta_rmse": 0.6770661654600653,
+      "omega_rmse": 2.0135504014179593,
+      "final_theta_error": -0.11826487326512791,
+      "final_omega_error": -3.0374170961858287,
+      "max_abs_theta_error": 1.1537272487901324
+    },
+    {
+      "trajectory": 75,
+      "scope": "held_out",
+      "method": "Persistence",
+      "initial": [
+        -0.8925518669504289,
+        0.07367410315158107
+      ],
+      "theta_rmse": 1.0352330149275275,
+      "omega_rmse": 1.5195410297572491,
+      "final_theta_error": -0.6295657148181832,
+      "final_omega_error": 1.4947451084733965,
+      "max_abs_theta_error": 1.7377676710382035
+    },
+    {
+      "trajectory": 75,
+      "scope": "held_out",
+      "method": "Euler",
+      "initial": [
+        -0.8925518669504289,
+        0.07367410315158107
+      ],
+      "theta_rmse": 0.4839899888036278,
+      "omega_rmse": 1.3069683450064562,
+      "final_theta_error": 1.2375289965110416,
+      "final_omega_error": -0.9716617392797269,
+      "max_abs_theta_error": 1.274467015895393
+    },
+    {
+      "trajectory": 75,
+      "scope": "held_out",
+      "method": "RK4",
+      "initial": [
+        -0.8925518669504289,
+        0.07367410315158107
+      ],
+      "theta_rmse": 8.128237729994389e-7,
+      "omega_rmse": 2.3947629105418007e-6,
+      "final_theta_error": 1.5112686413409904e-6,
+      "final_omega_error": -2.955640819646277e-6,
+      "max_abs_theta_error": 1.7517219916794724e-6
+    },
+    {
+      "trajectory": 75,
+      "scope": "held_out",
+      "method": "NN",
+      "initial": [
+        -0.8925518669504289,
+        0.07367410315158107
+      ],
+      "theta_rmse": 0.017499847432734267,
+      "omega_rmse": 0.05294321490917294,
+      "final_theta_error": -0.03478490616915908,
+      "final_omega_error": 0.10199367636826895,
+      "max_abs_theta_error": 0.04567188913273435
+    },
+    {
+      "trajectory": 75,
+      "scope": "held_out",
+      "method": "Tiny NN",
+      "initial": [
+        -0.8925518669504289,
+        0.07367410315158107
+      ],
+      "theta_rmse": 0.15857547457138255,
+      "omega_rmse": 0.45833386166507056,
+      "final_theta_error": -0.27378924165204965,
+      "final_omega_error": 1.1267532742681645,
+      "max_abs_theta_error": 0.43158744695473594
+    },
+    {
+      "trajectory": 76,
+      "scope": "held_out",
+      "method": "Persistence",
+      "initial": [
+        -0.6804462683549983,
+        1.1180723696261872
+      ],
+      "theta_rmse": 0.8169482144275214,
+      "omega_rmse": 1.7281054544748764,
+      "final_theta_error": -0.24263285877715057,
+      "final_omega_error": 1.557161255082092,
+      "max_abs_theta_error": 1.416828074207796
+    },
+    {
+      "trajectory": 76,
+      "scope": "held_out",
+      "method": "Euler",
+      "initial": [
+        -0.6804462683549983,
+        1.1180723696261872
+      ],
+      "theta_rmse": 0.3782141764556878,
+      "omega_rmse": 1.0590070789303285,
+      "final_theta_error": 0.22764535640948685,
+      "final_omega_error": -2.8768034633565005,
+      "max_abs_theta_error": 0.9441062131942043
+    },
+    {
+      "trajectory": 76,
+      "scope": "held_out",
+      "method": "RK4",
+      "initial": [
+        -0.6804462683549983,
+        1.1180723696261872
+      ],
+      "theta_rmse": 7.404373724576703e-7,
+      "omega_rmse": 2.2359062224954164e-6,
+      "final_theta_error": 4.6762488642437816e-7,
+      "final_omega_error": -4.736611893263465e-6,
+      "max_abs_theta_error": 1.5731247402922532e-6
+    },
+    {
+      "trajectory": 76,
+      "scope": "held_out",
+      "method": "NN",
+      "initial": [
+        -0.6804462683549983,
+        1.1180723696261872
+      ],
+      "theta_rmse": 0.02320876357460924,
+      "omega_rmse": 0.07344184726032119,
+      "final_theta_error": -0.008424090852251764,
+      "final_omega_error": 0.17563466821394202,
+      "max_abs_theta_error": 0.05379411858227727
+    },
+    {
+      "trajectory": 76,
+      "scope": "held_out",
+      "method": "Tiny NN",
+      "initial": [
+        -0.6804462683549983,
+        1.1180723696261872
+      ],
+      "theta_rmse": 0.23208085026577038,
+      "omega_rmse": 0.7355454870524851,
+      "final_theta_error": 0.17353616588476733,
+      "final_omega_error": 1.6689798390101749,
+      "max_abs_theta_error": 0.55301922437555
+    },
+    {
+      "trajectory": 77,
+      "scope": "held_out",
+      "method": "Persistence",
+      "initial": [
+        -1.407342420790412,
+        0.41968186119517004
+      ],
+      "theta_rmse": 1.633422764926735,
+      "omega_rmse": 2.256839200021908,
+      "final_theta_error": -2.0051965431722536,
+      "final_omega_error": 2.162885915821192,
+      "max_abs_theta_error": 2.7364662216657187
+    },
+    {
+      "trajectory": 77,
+      "scope": "held_out",
+      "method": "Euler",
+      "initial": [
+        -1.407342420790412,
+        0.41968186119517004
+      ],
+      "theta_rmse": 1.0617380580307174,
+      "omega_rmse": 2.6826202019523127,
+      "final_theta_error": -1.2522139928094267,
+      "final_omega_error": 6.2168124619032294,
+      "max_abs_theta_error": 2.5119623160940576
+    },
+    {
+      "trajectory": 77,
+      "scope": "held_out",
+      "method": "RK4",
+      "initial": [
+        -1.407342420790412,
+        0.41968186119517004
+      ],
+      "theta_rmse": 9.103365240910801e-7,
+      "omega_rmse": 2.8102342894640567e-6,
+      "final_theta_error": 1.5152118467698372e-6,
+      "final_omega_error": 4.524640667691315e-6,
+      "max_abs_theta_error": 2.037137686883468e-6
+    },
+    {
+      "trajectory": 77,
+      "scope": "held_out",
+      "method": "NN",
+      "initial": [
+        -1.407342420790412,
+        0.41968186119517004
+      ],
+      "theta_rmse": 0.0631630845016344,
+      "omega_rmse": 0.1939396487039821,
+      "final_theta_error": 0.08425061469111061,
+      "final_omega_error": 0.2540418196306333,
+      "max_abs_theta_error": 0.11985512284401949
+    },
+    {
+      "trajectory": 77,
+      "scope": "held_out",
+      "method": "Tiny NN",
+      "initial": [
+        -1.407342420790412,
+        0.41968186119517004
+      ],
+      "theta_rmse": 0.5585774454335976,
+      "omega_rmse": 1.6733206339594273,
+      "final_theta_error": 0.18154132178055105,
+      "final_omega_error": 2.3723310583525814,
+      "max_abs_theta_error": 0.9542823349030534
+    },
+    {
+      "trajectory": 78,
+      "scope": "held_out",
+      "method": "Persistence",
+      "initial": [
+        -0.5383566427294868,
+        0.07219004220089253
+      ],
+      "theta_rmse": 0.6209645824289437,
+      "omega_rmse": 0.9404709614654622,
+      "final_theta_error": -0.24254622608445392,
+      "final_omega_error": 0.476076589953477,
+      "max_abs_theta_error": 1.0499356190384908
+    },
+    {
+      "trajectory": 78,
+      "scope": "held_out",
+      "method": "Euler",
+      "initial": [
+        -0.5383566427294868,
+        0.07219004220089253
+      ],
+      "theta_rmse": 0.2242309353982273,
+      "omega_rmse": 0.6878860613534159,
+      "final_theta_error": -0.16790842103613773,
+      "final_omega_error": -1.660694865315906,
+      "max_abs_theta_error": 0.5402578213313891
+    },
+    {
+      "trajectory": 78,
+      "scope": "held_out",
+      "method": "RK4",
+      "initial": [
+        -0.5383566427294868,
+        0.07219004220089253
+      ],
+      "theta_rmse": 5.672353828438245e-7,
+      "omega_rmse": 1.71860627435259e-6,
+      "final_theta_error": 4.693753104523246e-7,
+      "final_omega_error": -3.4929942830386196e-6,
+      "max_abs_theta_error": 1.1891617393896409e-6
+    },
+    {
+      "trajectory": 78,
+      "scope": "held_out",
+      "method": "NN",
+      "initial": [
+        -0.5383566427294868,
+        0.07219004220089253
+      ],
+      "theta_rmse": 0.023571603527984847,
+      "omega_rmse": 0.07508049956879842,
+      "final_theta_error": -0.013126482544172036,
+      "final_omega_error": 0.16310458769764846,
+      "max_abs_theta_error": 0.05119320031542121
+    },
+    {
+      "trajectory": 78,
+      "scope": "held_out",
+      "method": "Tiny NN",
+      "initial": [
+        -0.5383566427294868,
+        0.07219004220089253
+      ],
+      "theta_rmse": 0.2895649467671259,
+      "omega_rmse": 0.9220852244287551,
+      "final_theta_error": 0.3765937726121953,
+      "final_omega_error": 1.4074506829610023,
+      "max_abs_theta_error": 0.5950722276583789
+    },
+    {
+      "trajectory": 79,
+      "scope": "held_out",
+      "method": "Persistence",
+      "initial": [
+        -0.35398356688758215,
+        -0.9839047154241012
+      ],
+      "theta_rmse": 0.4448225237157192,
+      "omega_rmse": 1.3039980939092828,
+      "final_theta_error": -0.22941796376275825,
+      "final_omega_error": -0.17262871006675196,
+      "max_abs_theta_error": 0.8046637627766537
+    },
+    {
+      "trajectory": 79,
+      "scope": "held_out",
+      "method": "Euler",
+      "initial": [
+        -0.35398356688758215,
+        -0.9839047154241012
+      ],
+      "theta_rmse": 0.2016048950752202,
+      "omega_rmse": 0.5897030540500859,
+      "final_theta_error": 0.13184621045104716,
+      "final_omega_error": -1.4796987623456461,
+      "max_abs_theta_error": 0.47905310156582626
+    },
+    {
+      "trajectory": 79,
+      "scope": "held_out",
+      "method": "RK4",
+      "initial": [
+        -0.35398356688758215,
+        -0.9839047154241012
+      ],
+      "theta_rmse": 5.171766269081914e-7,
+      "omega_rmse": 1.5568762990841773e-6,
+      "final_theta_error": 9.792937837455051e-7,
+      "final_omega_error": -1.6221758817325238e-6,
+      "max_abs_theta_error": 1.0916997471195622e-6
+    },
+    {
+      "trajectory": 79,
+      "scope": "held_out",
+      "method": "NN",
+      "initial": [
+        -0.35398356688758215,
+        -0.9839047154241012
+      ],
+      "theta_rmse": 0.022352838077849633,
+      "omega_rmse": 0.0700957784728618,
+      "final_theta_error": -0.04018870048119695,
+      "final_omega_error": 0.08766088947823303,
+      "max_abs_theta_error": 0.04817885304803522
+    },
+    {
+      "trajectory": 79,
+      "scope": "held_out",
+      "method": "Tiny NN",
+      "initial": [
+        -0.35398356688758215,
+        -0.9839047154241012
+      ],
+      "theta_rmse": 0.28197527378441006,
+      "omega_rmse": 0.8759613454388736,
+      "final_theta_error": 0.03304026334524007,
+      "final_omega_error": 1.723577821080073,
+      "max_abs_theta_error": 0.5625630849994121
+    },
+    {
+      "trajectory": 80,
+      "scope": "out_of_distribution",
+      "method": "Persistence",
+      "initial": [
+        2.5,
+        0.0
+      ],
+      "theta_rmse": 2.8349149973628687,
+      "omega_rmse": 3.2207386079224958,
+      "final_theta_error": 1.3154350174195981,
+      "final_omega_error": -1.5386760491713651,
+      "max_abs_theta_error": 4.714603913785465
+    },
+    {
+      "trajectory": 80,
+      "scope": "out_of_distribution",
+      "method": "Euler",
+      "initial": [
+        2.5,
+        0.0
+      ],
+      "theta_rmse": 1.9855423447849214,
+      "omega_rmse": 4.467320835925543,
+      "final_theta_error": 0.1519341351027843,
+      "final_omega_error": -5.8430176174936355,
+      "max_abs_theta_error": 3.8546554836443674
+    },
+    {
+      "trajectory": 80,
+      "scope": "out_of_distribution",
+      "method": "RK4",
+      "initial": [
+        2.5,
+        0.0
+      ],
+      "theta_rmse": 9.965191748846999e-7,
+      "omega_rmse": 2.5924454087415447e-6,
+      "final_theta_error": -9.165047285542016e-7,
+      "final_omega_error": 5.477486925142827e-6,
+      "max_abs_theta_error": 2.226560493284735e-6
+    },
+    {
+      "trajectory": 80,
+      "scope": "out_of_distribution",
+      "method": "NN",
+      "initial": [
+        2.5,
+        0.0
+      ],
+      "theta_rmse": 0.49891926437689765,
+      "omega_rmse": 1.3466231976201262,
+      "final_theta_error": -0.7214200331347882,
+      "final_omega_error": 2.9991878968520647,
+      "max_abs_theta_error": 1.2207703584394434
+    },
+    {
+      "trajectory": 80,
+      "scope": "out_of_distribution",
+      "method": "Tiny NN",
+      "initial": [
+        2.5,
+        0.0
+      ],
+      "theta_rmse": 1.5018890774828295,
+      "omega_rmse": 4.334143443488387,
+      "final_theta_error": -2.4749846261127466,
+      "final_omega_error": -2.5968541456899725,
+      "max_abs_theta_error": 2.8063235762167325
+    }
+  ]
+}
