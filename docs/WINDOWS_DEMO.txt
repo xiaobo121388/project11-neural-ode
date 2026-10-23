@@ -1,0 +1,25 @@
+PROJECT 11 - OFFLINE WINDOWS DEMO
+
+1. Extract the complete WindowsDemo folder.
+2. Double-click pendulum-lab.exe.
+3. Start with Main and Held-out 68.
+4. Compare Tiny with the same initial state.
+5. Switch back to Main, then choose Outside training range.
+
+The default trained models are embedded in the executable.
+No Rust, Python, internet connection or external model download is required
+for the desktop demonstration. Windows x64 and an OpenGL-capable display
+environment are required. The C runtime is linked statically.
+
+The triangle toggles play. The curved arrow resets playback. The forward
+icon advances one prediction step. Space also toggles play/pause.
+The simulation stops after ten seconds; pressing Play then restarts it.
+
+project11.exe is the command-line companion. Run project11.exe --help
+from PowerShell for generate/train/evaluate/benchmark/reproduce/gui commands.
+Python and NumPy are needed only for the auxiliary language benchmark.
+
+Do not claim that small one-step error guarantees accurate long rollouts,
+or that the training-time comparison measures inference speed against RK4.
+
+Source: https://github.com/xiaobo121388/project11-neural-ode
