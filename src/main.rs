@@ -15,10 +15,21 @@ use std::path::PathBuf;
 #[command(version, about = "Hand-written neural ODE surrogate: Team 11")]
 struct Cli {
     #[command(subcommand)]
-    command: Command,
+    command: Option<Command>,
 }
 #[derive(Subcommand)]
 enum Command {
+    /// Open the offline desktop lab (also the default with no subcommand).
+    Gui {
+        #[arg(long)]
+        model: Option<PathBuf>,
+        #[arg(long, default_value_t = 1280.0)]
+        width: f32,
+        #[arg(long, default_value_t = 800.0)]
+        height: f32,
+        #[arg(long)]
+        paused: bool,
+    },
     /// Generate the default 80-trajectory reference dataset.
     Generate {
         #[arg(long, default_value = ".")]
@@ -88,7 +99,27 @@ fn evaluate(out: &std::path::Path) -> Result<()> {
     Ok(())
 }
 fn run() -> Result<()> {
-    match Cli::parse().command {
+    let command = Cli::parse().command.unwrap_or(Command::Gui {
+        model: None,
+        width: 1280.0,
+        height: 800.0,
+        paused: false,
+    });
+    match command {
+        Command::Gui {
+            model,
+            width,
+            height,
+            paused,
+        } => {
+            #[cfg(feature = "gui")]
+            project11::gui::launch(model.as_deref(), [width, height], paused)?;
+            #[cfg(not(feature = "gui"))]
+            {
+                let _ = (model, width, height, paused);
+                anyhow::bail!("GUI not compiled; rebuild with default features");
+            }
+        }
         Command::Generate { out } => {
             let data = Dataset::generate(DataConfig::default())?;
             data.save(&out.join("data"))?;

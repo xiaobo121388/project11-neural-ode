@@ -6,6 +6,8 @@
 pub mod benchmark;
 pub mod data;
 pub mod evaluation;
+#[cfg(feature = "gui")]
+pub mod gui;
 pub mod model;
 pub mod nn;
 pub mod physics;
