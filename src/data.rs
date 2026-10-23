@@ -74,7 +74,10 @@ impl DataConfig {
     pub fn validate(&self) -> Result<()> {
         self.physics.validate()?;
         ensure!(
-            self.trajectories > self.train_trajectories + self.validation_trajectories
+            self.trajectories
+                > self
+                    .train_trajectories
+                    .saturating_add(self.validation_trajectories)
                 && self.train_trajectories > 0
                 && self.validation_trajectories > 0,
             "Need three nonempty trajectory splits"
@@ -82,6 +85,10 @@ impl DataConfig {
         ensure!(
             self.steps > 0 && self.steps <= 100000 && self.trajectories <= 10000,
             "Dataset size out of bounds"
+        );
+        ensure!(
+            self.trajectories.saturating_mul(self.steps) <= 2_000_000,
+            "Dataset exceeds two million transitions"
         );
         for range in [self.theta_range, self.omega_range] {
             ensure!(

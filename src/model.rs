@@ -69,12 +69,19 @@ impl Model {
     pub fn load(path: &Path) -> Result<Self> {
         ensure!(
             std::fs::metadata(path)
-                .with_context(|| format!("Missing model: {}", path.display()))?
+                .map_err(|e| anyhow::anyhow!(
+                    "Cannot access model '{}': {:?}",
+                    path.display(),
+                    e.kind()
+                ))?
                 .len()
                 <= 16_000_000,
             "Checkpoint exceeds 16 MB limit"
         );
-        Self::from_json(&std::fs::read_to_string(path)?)
+        let json = std::fs::read_to_string(path).map_err(|e| {
+            anyhow::anyhow!("Cannot read model '{}': {:?}", path.display(), e.kind())
+        })?;
+        Self::from_json(&json)
     }
     /// Validate and save through a temporary sibling file before replacement.
     pub fn save(&self, path: &Path) -> Result<()> {
