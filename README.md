@@ -1,4 +1,6 @@
-# Neural Network from Scratch for ODE Solving
+# project11-neural-ode
+
+Neural Network from Scratch for ODE Solving
 
 Team 11, Course 35-380. A Rust implementation of a discrete state-transition
 surrogate for a damped pendulum. The neural network and its gradients are
